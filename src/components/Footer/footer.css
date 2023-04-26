@@ -1,0 +1,24 @@
+.footer-container {
+    height: 209px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 29px;
+    row-gap: 29px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-container-logo {
+    height: 40px;
+    width: 122px;
+}
+
+.footer-container-rights {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: white;
+    margin: 0;
+}

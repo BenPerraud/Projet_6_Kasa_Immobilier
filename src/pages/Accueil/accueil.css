@@ -1,0 +1,40 @@
+.accueil-grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 63px;
+    row-gap: 43px;
+}
+
+.accueil-grid-img {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.accueil-grid-img-title-background {
+    background: #000000;
+    opacity: 0.3;
+    mix-blend-mode: darken;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.accueil-grid-img-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+
+
