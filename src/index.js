@@ -6,8 +6,8 @@ import './styles/index.css'
 import Accueil from "./pages/Accueil"
 import Propos from "./pages/Propos"
 import Housing from "./pages/Housing"
-import Banner from "./components/Banner/Index"
-import Footer from "./components/Footer/Index"
+import Banner from "./components/Banner"
+import Footer from "./components/Footer"
 
 const root = createRoot(document.getElementById("root"));
 

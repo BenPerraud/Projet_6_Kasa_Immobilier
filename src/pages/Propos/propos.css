@@ -1,0 +1,32 @@
+.propos-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 63px;
+    row-gap: 43px; 
+}
+
+.propos-img {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.propos-img-background {
+    background: #000000;
+    opacity: 0.3;
+    mix-blend-mode: darken;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.propos-collapse {
+    padding-left: 15%;
+    padding-right: 15%;
+}

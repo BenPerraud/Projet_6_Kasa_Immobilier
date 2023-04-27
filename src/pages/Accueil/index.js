@@ -1,7 +1,7 @@
 import imgsource from '../../assets/images/img-source.png'
 import "./accueil.css"
 import "./cards.css"
-import housings from "./../../assets/datas/logements.json"
+import housings from "../../assets/datas/logements.json"
 
 function Cards () {
   return (
