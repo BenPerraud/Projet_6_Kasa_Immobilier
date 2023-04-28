@@ -1,0 +1,32 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 66px;
+    padding-top: 169px;
+    padding-bottom: 159px;
+}
+
+.error404{
+    margin: 0;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    color: #FF6060
+}
+
+.error404-text{
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+    padding-bottom: 116px;
+}
+
+.error404-redirect {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060
+}
