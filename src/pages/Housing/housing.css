@@ -6,12 +6,6 @@
     row-gap: 30px;
 }
 
-.carrousel {
-    height: 415px;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
 .flex-profil {
     display: flex;
     flex-direction: row;

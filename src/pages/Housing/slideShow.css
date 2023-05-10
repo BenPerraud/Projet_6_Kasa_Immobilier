@@ -1,0 +1,29 @@
+.carrousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel-img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.carrousel-chevron {
+    color: white;
+    height: 80px;
+}
+
+.chevron-position {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
