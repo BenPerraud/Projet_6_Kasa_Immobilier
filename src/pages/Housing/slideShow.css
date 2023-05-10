@@ -1,14 +1,22 @@
 .carrousel {
     position: relative;
     display: flex;
+}
+
+.index {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.carrousel-img {
-    height: 415px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 25px;
+.hidden {
+    display: none;
 }
 
 .carrousel-chevron {
@@ -16,14 +24,18 @@
     height: 80px;
 }
 
-.chevron-position {
-    display: flex;
-    flex-direction: row;
+.index-count {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+    align-self: flex-end;
+    padding-bottom: 25px;
+}
+
+.carrousel-img {
+    height: 415px;
     width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
+    object-fit: cover;
+    border-radius: 25px;
 }
