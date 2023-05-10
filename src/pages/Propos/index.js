@@ -11,7 +11,9 @@ function Propos () {
             </div>
             <div className="propos-collapse">
                 {datas.map((data) => 
-                    <div key={data.id}>{Collapse(data)}</div>
+                    <div key={data.id}>
+                        <Collapse title={data.id} text={data.description} />
+                    </div>
                 )}
             </div>  
         </div>    

@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 
-function Collapse (x) {
+function Collapse ({title, text}) {
     const [isOpen, setIsOpen] = useState(false)
     
     function handleChange () {
@@ -15,13 +15,11 @@ function Collapse (x) {
         
     return (
         <div>
-            <div>
-                <div key={x.id} className="collapse-container">
-                    <p>{x.id}</p>
-                    {isOpen ? (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronDown}></FontAwesomeIcon>) : (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronUp}></FontAwesomeIcon>) }
-                </div>
-                <div className={isOpen ? "open" : "closed"}>{x.description}</div>
+            <div className="collapse-container">
+                <p>{title}</p>
+                {isOpen ? (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronDown}></FontAwesomeIcon>) : (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronUp}></FontAwesomeIcon>) }
             </div>
+            <div className={isOpen ? "open" : "closed"}>{text}</div>
         </div>
     )
 }

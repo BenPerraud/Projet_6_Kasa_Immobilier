@@ -2,8 +2,8 @@ import klogo from '../../assets/images/klogo.png'
 import alogo from '../../assets/images/alogo.png'
 import slogo from '../../assets/images/slogo.png'
 import logologo from '../../assets/images/logologo.png'
-import {Link} from "react-router-dom"
 import "./banner.css"
+import { NavLink } from 'react-router-dom'
 
 
 function Banner () {
@@ -21,8 +21,8 @@ function Banner () {
                     </div>
                 </div>
                 <nav className='navbar-nav'>
-                    <Link to="/" className='navbar-nav-elements'>Accueil</Link>
-                    <Link to="/a-propos" className='navbar-nav-elements'>A propos</Link> 
+                    <NavLink to="/" className='navbar-nav-elements'>Accueil</NavLink>
+                    <NavLink to="/a-propos" className='navbar-nav-elements'>A propos</NavLink> 
                 </nav>
             </header>
         </div>
