@@ -7,9 +7,10 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 1;
-    padding-left: 2%;
+    box-sizing: border-box;
     padding-right: 2%;
+    padding-left: 2%;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,9 +26,7 @@
 }
 
 .index-count {
-    font-weight: 500;
     font-size: 18px;
-    line-height: 142.6%;
     color: #FFFFFF;
     align-self: flex-end;
     padding-bottom: 25px;
@@ -38,4 +37,16 @@
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 375px) {
+    .carrousel-img {
+        height: 255px;
+    }
+    .index-count {
+        display: none;
+    }
+    .carrousel-chevron {
+        height: 20px;
+    }
 }

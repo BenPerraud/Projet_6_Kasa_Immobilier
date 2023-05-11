@@ -1,6 +1,5 @@
 .accueil-grid-gallery {
     background: #F7F7F7;
-    width: 100%;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
@@ -21,15 +20,29 @@
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
+    text-decoration: none;
 }
 
 .cards-container-title {
-    font-weight: 500;
     font-size: 18px;
-    line-height: 142.6%;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    .accueil-grid-gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        row-gap: 20px;
+    }
+    .cards-container {
+        height: 225px;
+    }
+    .cards-container-title {
+        padding-bottom: 15px;
+    }
+    
 }
