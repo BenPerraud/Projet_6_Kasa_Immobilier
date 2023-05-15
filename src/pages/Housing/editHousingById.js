@@ -1,8 +1,8 @@
 import "./housing.css"
-import GoodRating from "./goodRating"
-import BadRating from "./badRating"
+import GoodRating from "./Rating/goodRating.js"
+import BadRating from "./Rating/badRating.js"
 import Collapse from "../../components/Collapse"
-import SlideShow from "./slideShow"
+import SlideShow from "./SlideShow/slideShow"
 
 function EditHousingById (props) {
     let {x} = props
