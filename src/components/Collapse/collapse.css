@@ -1,6 +1,7 @@
 .collapse-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .collapse-title {
@@ -16,6 +17,12 @@
     padding-right: 1.8%;
     font-size: 24px;
     font-weight: 400px;
+    flex-shrink: 0;
+}
+
+.collapse-title-element {
+    margin: 0;
+    line-height: 34px;
 }
 
 .open {
@@ -25,6 +32,7 @@
     font-size: 24px;
     color: #FF6060;
     padding: 2%;
+    height: 100%;
 }
 
 .closed {
@@ -36,6 +44,7 @@
         font-size: 13px;
         font-weight: 500;
         line-height: 19px;
+        height: 30px;
     }
     .open {
         font-size: 12px;

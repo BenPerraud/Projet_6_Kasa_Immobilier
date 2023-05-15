@@ -11,7 +11,7 @@
     margin: 0;
     font-weight: 700;
     font-size: 288px;
-    line-height: 142.6%;
+    line-height: 411px;
     color: #FF6060
 }
 
@@ -19,7 +19,7 @@
     margin: 0;
     font-weight: 500;
     font-size: 36px;
-    line-height: 142.6%;
+    line-height: 51px;
     color: #FF6060;
     padding-bottom: 116px;
 }
@@ -27,6 +27,27 @@
 .error404-redirect {
     font-weight: 500;
     font-size: 18px;
-    line-height: 142.6%;
+    line-height: 26px;
     color: #FF6060
+}
+
+@media screen and (max-width: 375px) {
+    .error {
+        row-gap: 11px;
+        padding-top: 195px;
+    }
+    .error404 {
+        font-size: 96px;
+        line-height: 137px;
+    }
+    .error404-text {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        width: 80%;
+        padding-bottom: 133px;
+    }
+    .error404-redirect {
+        font-size: 14px;
+    }
 }

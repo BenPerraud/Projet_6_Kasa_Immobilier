@@ -16,7 +16,7 @@ function Collapse ({title, text}) {
     return (
         <div className="collapse-container">
             <div className="collapse-title">
-                <p>{title}</p>
+                <p className="collapse-title-element">{title}</p>
                 {isOpen ? (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronDown}></FontAwesomeIcon>) : (<FontAwesomeIcon onClick={() => handleChange()} icon={faChevronUp}></FontAwesomeIcon>) }
             </div>
             <div className={isOpen ? "open" : "closed"}>{text}</div>

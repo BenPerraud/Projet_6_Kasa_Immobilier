@@ -21,13 +21,13 @@
 .profil-title {
     font-size: 36px;
     color: #FF6060;
-    line-height: 142.6%;
+    line-height: 51px;
 }
 
 .profil-location {
     font-size: 18px;
     color: #FF6060;
-    line-height: 142.6%;
+    line-height: 26px;
     padding-bottom: 20px;
 }
 
@@ -45,7 +45,7 @@
     font-size: 14px;
     color: white;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
     line-height: 20px;
 }
@@ -113,6 +113,10 @@
 }
 
 @media screen and (max-width: 375px) {
+    .housing-flex {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .flex-profil {
         display: flex;
         flex-direction: column;
@@ -123,10 +127,12 @@
     }
     .profil-title {
         font-size: 18px;
+        line-height: 26px;
     }
     .profil-location {
         font-size: 14px;
-        padding-bottom: 7px;
+        padding-bottom: 5px;
+        line-height: 20px;
     }
     .profil-tags {
         height: 18px;
@@ -134,6 +140,8 @@
     .profil-tags-elements {
         font-size: 10px;
         border-radius: 5px;
+        line-height: 14px;
+        height: 100%;
     }
     .profil-right {
         display: flex;
@@ -159,5 +167,9 @@
     }
     .profil-rating-star-element {
         height: 13px;
+    }
+    .descript-equip-flex {
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
