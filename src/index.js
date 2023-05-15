@@ -15,13 +15,13 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Banner />
-      <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/a-propos" element={<Propos />} />
-        <Route path="/:id" element={<Housing />} />
-        <Route path="/Error" element={<ErrorBoundary />} />
-        <Route path="*" element={<ErrorBoundary />} /> 
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Accueil />} />
+      <Route path="/a-propos" element={<Propos />} />
+      <Route path="/:id" element={<Housing />} />
+      <Route path="/Error" element={<ErrorBoundary />} />
+      <Route path="*" element={<ErrorBoundary />} /> 
+    </Routes>
     <Footer />
   </BrowserRouter>
 )

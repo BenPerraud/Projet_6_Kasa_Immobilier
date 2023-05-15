@@ -1,4 +1,10 @@
 .collapse-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.collapse-title {
     height: 47px;
     background: #FF6060;
     border-radius: 5px;
@@ -9,22 +15,40 @@
     color: white;
     padding-left: 1.8%;
     padding-right: 1.8%;
-    font-weight: 500;
     font-size: 24px;
-    line-height: 142.6%;
+    font-weight: 400px;
+    flex-shrink: 0;
+}
+
+.collapse-title-element {
+    margin: 0;
+    line-height: 34px;
 }
 
 .open {
-    display: block;
     background: #F7F7F7;
     border-radius: 5px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 142.6%;
     color: #FF6060;
-    padding: 1.5%;
+    padding: 2%;
+    height: 100%;
 }
 
 .closed {
     display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .collapse-title {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        height: 30px;
+    }
+    .open {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 19px;
+    }
 }

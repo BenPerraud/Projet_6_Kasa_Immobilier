@@ -6,6 +6,8 @@ import SlideShow from "./slideShow"
 
 function EditHousingById (props) {
     let {x} = props
+    let fullName = (x.host.name).split(" ")
+
     return (
         <div className="housing-flex" key={x.id}>
             <SlideShow z={x}/>
@@ -21,7 +23,10 @@ function EditHousingById (props) {
                 </div>
                 <div className="profil-right">
                     <div className="profil-host">
-                        <div className="profil-host-name">{x.host.name}</div>
+                        <div className="profil-host-fullname">
+                            <div className="profil-host-name">{fullName[0]}</div>
+                            <div className="profil-host-name">{fullName[1]}</div>
+                        </div>
                         <img className="profil-host-img" src={x.host.picture} alt="Profil du propriétaire"></img>
                     </div>
                     <div className="profil-rating">
@@ -31,18 +36,14 @@ function EditHousingById (props) {
                 </div>
             </div>
             <div className="descript-equip-flex">
-                <div className="collapse">
-                    <Collapse title="Description" text={x.description} />
-                </div>
-                <div className="collapse">
-                    <Collapse title="Equipements" text={
-                        <ul className="equipments">
-                            {(x.equipments).map((equipment, index) =>
-                                <li className="equipments-elements" key={`${equipment}-${index}`}>{equipment}</li>
-                            )}
-                        </ul>
-                    } />
-                </div>
+                <Collapse title="Description" text={x.description} />
+                <Collapse title="Equipements" text={
+                    <ul className="equipments">
+                        {(x.equipments).map((equipment, index) =>
+                            <li className="equipments-elements" key={`${equipment}-${index}`}>{equipment}</li>
+                        )}
+                    </ul>
+                } />
             </div>
         </div>
     )
